@@ -1,0 +1,24 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo list for the odin project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnitz10/todo-list.git"
+  },
+  "author": "James Nitzband",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnitz10/todo-list/issues"
+  },
+  "homepage": "https://github.com/jnitz10/todo-list#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
