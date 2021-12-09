@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
+    <div class="container">
+        <div><button id = "addTaskButton" type="button">Add Task</button>
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <form id="taskForm">
+                        <label for="taskTitle">Title:<br></label>
+                        <input type="text" id="taskTitle" name="taskTitle"><br>
+                        <label for="taskDescription">Description:</label><br>
+                        <input type="text" id="taskDescription" name="taskDescription"><br>
+                        <label for="dueDate">Due Date:</label><br>
+                        <input type="text" id="dueDate" name="dueDate"><br>
+                        <label for="priority">Priority:</label><br>
+                        <input type="text" id="priority" name="priority"><br>
+                    </form>
+                    <div>
+                        <button type="button" id="formButton">Add Task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="main.js"></script>
 </body>
