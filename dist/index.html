@@ -5,29 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
     <div class="container">
-        <div><button id = "addTaskButton" type="button">Add Task</button>
-            <div class="bg-modal">
-                <div class="modal-content">
-                    <div class="close">+</div>
-                    <form id="taskForm">
-                        <label for="taskTitle">Title:<br></label>
-                        <input type="text" id="taskTitle" name="taskTitle"><br>
-                        <label for="taskDescription">Description:</label><br>
-                        <input type="text" id="taskDescription" name="taskDescription"><br>
-                        <label for="dueDate">Due Date:</label><br>
-                        <input type="text" id="dueDate" name="dueDate"><br>
-                        <label for="priority">Priority:</label><br>
-                        <input type="text" id="priority" name="priority"><br>
-                    </form>
-                    <div>
-                        <button type="button" id="formButton">Add Task</button>
-                    </div>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close" id="taskFormClose">+</div>
+                <form id="taskForm">
+                    <label for="taskTitle">Title:<br></label>
+                    <input type="text" id="taskTitle" name="taskTitle"><br>
+                    <label for="taskDescription">Description:</label><br>
+                    <input type="text" id="taskDescription" name="taskDescription"><br>
+                    <label for="dueDate">Due Date:</label><br>
+                    <input type="date" id="dueDate" name="dueDate"><br>
+                    <label for="priority">Priority:</label><br>
+                    <input type="text" id="priority" name="priority"><br>
+                </form>
+                <div>
+                    <button type="button" id="taskFormButton">Add Task</button>
                 </div>
             </div>
+        </div>
+        <div class="bg-modal2">
+            <div class="modal-content2">
+                <div class="close" id="projectFormClose">+</div>
+                <form id="projectForm">
+                    <label for="projectName">Project Name:<br></label>
+                    <input type="text" id="projectName" name="projectName">
+                </form>
+                <div>
+                    <button type="button" id="projectFormButton">Add Project</button>
+                </div>
+            </div>
+        </div>
+        <div class="interface">
+            <div class="projectPane">
+                <span class="project" id="defaultProject">Todo</span><br>
+                <span class="addProject">+ Add Project</span><br>
+                <span class="clearProjects">Clear Projects</span><br>
+                <div class="projectList"></div>
+            </div>
+            <div class="taskPane">
+                <div class="taskList"></div>
+                <span class="addTask">+ Add Task</span>
+
+
+            </div>
+
         </div>
     </div>
     
